@@ -30,7 +30,7 @@ Artifact GOOGLE_GOOGLE_APP_MEASUREMENT_ARTIFACT    = new Artifact ("Google.AppMe
 Artifact GOOGLE_PROMISES_OBJC_ARTIFACT             = new Artifact ("Google.PromisesObjC",             "2.4.0.5",     "15.0", ComponentGroup.Google, csprojName: "PromisesObjC");
 Artifact GOOGLE_GTM_SESSION_FETCHER_ARTIFACT       = new Artifact ("Google.GTMSessionFetcher",        "3.5.0.5",     "15.0", ComponentGroup.Google, csprojName: "GTMSessionFetcher");
 Artifact GOOGLE_NANOPB_ARTIFACT                    = new Artifact ("Google.Nanopb",                   "3.30910.0.5", "15.0", ComponentGroup.Google, csprojName: "Nanopb");
-Artifact GOOGLE_GOOGLE_UTILITIES_ARTIFACT          = new Artifact ("Google.GoogleUtilities",          "8.1.0.3",     "15.0", ComponentGroup.Google, csprojName: "GoogleUtilities");
+Artifact GOOGLE_GOOGLE_UTILITIES_ARTIFACT          = new Artifact ("Google.GoogleUtilities",          "8.1.3",     "15.0", ComponentGroup.Google, csprojName: "GoogleUtilities");
 Artifact GOOGLE_GOOGLE_DATA_TRANSPORT_ARTIFACT     = new Artifact ("Google.GoogleDataTransport",      "10.1.0.5",    "15.0", ComponentGroup.Google, csprojName: "GoogleDataTransport");
 
 // MLKit artifacts available to be built. These artifacts generate NuGets.
@@ -254,7 +254,7 @@ void SetArtifactsPodSpecs ()
         PodSpec.Create ("nanopb", "3.30910.0", frameworkSource: FrameworkSource.Pods),
     };
     GOOGLE_GOOGLE_UTILITIES_ARTIFACT.PodSpecs = new [] {
-        PodSpec.Create ("GoogleUtilities", "8.1.0", frameworkSource: FrameworkSource.Pods, subSpecs: new [] { "AppDelegateSwizzler", "Environment", "Logger", "MethodSwizzler", "Network", "NSData+zlib", "Privacy", "Reachability", "UserDefaults", }),
+        PodSpec.Create ("GoogleUtilities", "8.1.3", frameworkSource: FrameworkSource.Pods, subSpecs: new [] { "AppDelegateSwizzler", "Environment", "Logger", "MethodSwizzler", "Network", "NSData+zlib", "Privacy", "Reachability", "UserDefaults", }),
     };
 	GOOGLE_GOOGLE_DATA_TRANSPORT_ARTIFACT.PodSpecs = new [] {
         PodSpec.Create ("GoogleDataTransport", "10.1.0", frameworkSource: FrameworkSource.Pods),

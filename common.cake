@@ -471,6 +471,8 @@ void BuildXcodeFatFramework (FilePath xcodeProject, PodSpec [] podSpecs, Platfor
 		buildSettings["CODE_SIGN_IDENTITY"] = "";
 	if (!buildSettings.ContainsKey("EXPANDED_CODE_SIGN_IDENTITY"))
 		buildSettings["EXPANDED_CODE_SIGN_IDENTITY"] = "";
+	if (!buildSettings.ContainsKey("IPHONEOS_DEPLOYMENT_TARGET"))
+		buildSettings["IPHONEOS_DEPLOYMENT_TARGET"] = "15.0";
 
 	foreach (var podSpec in podSpecs) {
 		var target = podSpec.TargetName;
@@ -557,6 +559,8 @@ void BuildXcodeXcframework (FilePath xcodeProject, PodSpec [] podSpecs, Platform
 		buildSettings["CODE_SIGN_IDENTITY"] = "";
 	if (!buildSettings.ContainsKey("EXPANDED_CODE_SIGN_IDENTITY"))
 		buildSettings["EXPANDED_CODE_SIGN_IDENTITY"] = "";
+	if (!buildSettings.ContainsKey("IPHONEOS_DEPLOYMENT_TARGET"))
+		buildSettings["IPHONEOS_DEPLOYMENT_TARGET"] = "15.0";
 
 	foreach (var podSpec in podSpecs) {
 		Information ($"Building the following framework: {podSpec.FrameworkName}...");

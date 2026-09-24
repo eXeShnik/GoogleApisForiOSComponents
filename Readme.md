@@ -209,7 +209,7 @@ These packages are usually consumed transitively rather than referenced directly
 | `AppCheckCore` | `11.2.0` |
 | `GoogleAppMeasurement` | `12.10.0` |
 | `GoogleDataTransport` | `10.1.0.5` |
-| `GoogleUtilities` | `8.1.0.3` |
+| `GoogleUtilities` | `8.1.3` |
 | `Nanopb` | `3.30910.0.5` |
 | `PromisesObjC` | `2.4.0.5` |
 
